@@ -11,10 +11,6 @@ CHIP A6Q2201498887 {
     And(a=nota, b=b, out=temp2);
     And(a=temp2, b=c, out=temp3);
     And(a=temp3, b=d, out=term2);
-    And(a=a, b=notb, out=temp4);
-    And(a=temp4, b=d, out=term3);
-    And(a=a, b=b, out=term4);
-    Or(a=term1, b=term2, out=temp5);
-    Or(a=temp5, b=term3, out=temp6);
-    Or(a=temp6, b=term4, out=f);
+    Or(a=term1, b=term2, out=temp4);
+    Or(a=temp4, b=a, out=f);
 }
