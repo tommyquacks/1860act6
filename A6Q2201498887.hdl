@@ -39,4 +39,4 @@ CHIP A6Q2201498887 {
     Or(a=tempB, b=min9, out=tempC);
     Or(a=tempC, b=min11, out=f);
 }
-}
+
